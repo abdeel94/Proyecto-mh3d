@@ -1,0 +1,36 @@
+.textoaboutus{
+    color: rgb(255, 255, 255);
+}
+
+/* img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  } */
+
+  .carousel-caption{
+      color: #05b3b3;
+  }
+
+  .color-cont{
+      color: #000000;
+      opacity: 0.5;
+  }
+
+  .titulo-main{
+      text-align: center;
+  }
+  @media (min-width: 1200px) {
+    .container-2 {
+      width: 1000px;
+    }
+  }
+
+  .accordion-button{
+      color: brown;
+  }
+
+  .accordion-collapse {
+      color: blue;
+      background-color: whitesmoke;
+  }
