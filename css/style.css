@@ -20,6 +20,11 @@
   .titulo-main{
       text-align: center;
   }
+
+  .parrafo{
+      text-align: center;
+  }
+
   @media (min-width: 1200px) {
     .container-2 {
       width: 1000px;
@@ -34,3 +39,4 @@
       color: blue;
       background-color: whitesmoke;
   }
+
