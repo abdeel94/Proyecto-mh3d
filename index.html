@@ -21,7 +21,7 @@
 <body>
     <!-- navbar --> 
     <!-- navbar-expand-sm permite expandir la barra de navegación cuando está en small -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark flex-fill px-4 py-2">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark flex-fill px-4 py-2">
         <!-- container-fluid permite que los elementos se ajusten a la totalidad de la barra hasta en los bordes-->
         <div class="container-fluid">
 
@@ -67,10 +67,11 @@
 
         <div class="container mx-auto" >
 
-            <div class="row align-items-center py-5">
+            <div class="row align-items-center py-5 mx-4">
 
-                <div class="col-md-6 textoaboutus">
-                    <h1>Sobre Nosotros</h1>
+                <div class="col-12 col-md-6 textoaboutus">
+                    <!-- text-center para centrarlo en general, text-md-start para ajustarlo al inicio desde mediano hacia arriba -->
+                    <h1 class="text-center text-md-start">Sobre Nosotros</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem commodi impedit a sit voluptate sapiente mollitia ipsa, eligendi corrupti rerum? Unde laudantium corrupti perferendis odio ut iusto expedita error voluptates!</p>
                 </div>
                 
@@ -221,47 +222,51 @@
     <div class="section my-5">
 
       <div class="container">
+      <!-- <div class="container text-center"> con este se centra el texto -->
 
-        <form class="row align-items-center">
+        <form class="row align-items-center needs-validation was-validated" novalidate="">
 
           <div class="row justify-content-center">
-            <!-- Name input -->
-            <div class="col-8 col-md-4">
-              <label class="form-label parrafo" for="form4Example1">Nombre:</label>
-              <input type="text" id="form4Example1" class="form-control" />
+            <!-- nombre -->
+            <div class="col-8 col-lg-4">
+              <label class="form-label parrafo" for="forma_nombre">Nombre:</label>
+              <input type="text" id="forma_nombre" class="form-control" required=""/>
+              <div class="invalid-feedback">Por favor ingrese su nombre.</div>
               
             </div>
           
-            <!-- Email input -->
-            <div class="col-8 col-md-4">
-              <label class="form-label " for="form4Example2">Dirección de correo electrónico:</label>
-              <input type="email" id="form4Example2" class="form-control" />
+            <!-- mail -->
+            <div class="col-8 col-lg-4">
+              <label class="form-label " for="forma_mail">Dirección de correo electrónico:</label>
+              <input type="email" id="forma_mail" class="form-control" required=""/>
+              <div class="invalid-feedback">Por favor ingrese su correo electrónico.</div>
               
             </div>
 
           </div>
             <div>
-            <!-- Message input -->
-            <div class="col-10 col-md-6 mx-auto my-3">
+            <!-- mensaje -->
+            <div class="col-8 col-md-8 mx-auto my-3">
 
-              <label class="form-label" for="form4Example3">Ingrese su mensaje:</label>
-              <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+              <label class="form-label" for="forma_msje">Ingrese su mensaje:</label>
+              <textarea class="form-control" id="forma_msje" rows="4" required=""></textarea>
+              <div class="invalid-feedback">Por favor ingrese su mensaje.</div>
 
             
               
             </div>
           
-            <!-- Checkbox -->
+            <!-- checkbox -->
             <div class="form-check d-flex justify-content-center mb-4">
-              <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
-              <label class="form-check-label" for="form4Example4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="forma_check" checked />
+              <label class="form-check-label" for="forma_check">
                 Envíame una copia de este mensaje
               </label>
             </div>
           
             <div class="col-12 d-flex justify-content-center">
-            <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-4 center">Enviar</button>
+            <!-- botón -->
+            <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
           </form>
 
