@@ -32,11 +32,11 @@
   }
 
   .accordion-button{
-      color: brown;
+      color: #053d30;
   }
 
   .accordion-collapse {
-      color: blue;
-      background-color: whitesmoke;
+      color: rgba(31, 7, 88, 0.767);
+      background-color: rgb(255, 255, 255);
   }
 
