@@ -220,23 +220,33 @@
 
       <div class="container">
 
-        <form>
+        <form class="row align-items-center">
+
+          <div class="row justify-content-center">
             <!-- Name input -->
-            <div class="form-outline mb-4">
-              <input type="text" id="form4Example1" class="form-control" />
+            <div class="col-md-4">
               <label class="form-label parrafo" for="form4Example1">Nombre</label>
+              <input type="text" id="form4Example1" class="form-control" />
+              
             </div>
           
             <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form4Example2" class="form-control" />
+            <div class="col-md-4">
               <label class="form-label" for="form4Example2">Dirección de correo electrónico</label>
+              <input type="email" id="form4Example2" class="form-control" />
+              
             </div>
-          
+
+          </div>
+            <div>
             <!-- Message input -->
-            <div class="form-outline mb-4">
-              <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+            <div class="col-md-6 mx-auto my-3">
+
               <label class="form-label" for="form4Example3">Mensaje</label>
+              <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+
+            
+              
             </div>
           
             <!-- Checkbox -->
@@ -247,8 +257,10 @@
               </label>
             </div>
           
+            <div class="col-12 d-flex justify-content-center">
             <!-- Submit button -->
             <button type="submit" class="btn btn-primary btn-block mb-4 center">Enviar</button>
+            </div>
           </form>
 
       </div>
