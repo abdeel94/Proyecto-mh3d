@@ -11,6 +11,15 @@
   .carousel-caption{
       color: #05b3b3;
   }
+  .carousel-inner img {
+    width: 100%;
+    max-height: 600px;
+}
+
+.carousel-inner{
+ height: 1200px;
+}
+
 
   .color-cont{
       color: #000000;
@@ -39,4 +48,30 @@
       color: blue;
       background-color: whitesmoke;
   }
+ 
+
+.buttons {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+
 
