@@ -39,7 +39,8 @@
 }
 
   .accordion-button{
-      color: brown;
+      color: #2e81fd;
+      font-weight: 600;
   }
 
   .accordion-collapse {
@@ -74,7 +75,7 @@
 
 
 .accordion-collapse {
-    color: rgba(31, 7, 88, 0.767);
+    color: #0f1e27;
     background-color: rgb(255, 255, 255);
 }
 
