@@ -77,3 +77,10 @@
     color: rgba(31, 7, 88, 0.767);
     background-color: rgb(255, 255, 255);
 }
+
+.fila-botones{
+  position: relative;
+  top: -6px;
+  left: -120px;
+
+}
