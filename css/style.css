@@ -80,7 +80,17 @@
 
 .fila-botones{
   position: relative;
-  top: -6px;
+  top: -8px;
   left: -120px;
 
+}
+
+.titulo-main{
+  color: #314652;
+  font-weight:600;
+  
+}
+
+.titulo-aboutus{
+  font-weight: 600;
 }

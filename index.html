@@ -35,11 +35,19 @@
                 <ul class="navbar-nav mx-auto">
 
                     <li class="nav-item">
-                        <a href="#productos" class="nav-link">Productos</a>
+                        <a href="#nosotros" class="nav-link">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#questions" class="nav-link">Pedidos</a>
+                        <a href="#faq" class="nav-link">FAQ</a>
                     </li>
+
+                    <li class="nav-item">
+                        <a href="#servicios" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">Haz tu pedido</a>
+                    </li>
+
                 </ul>
 
                 <form class="d-flex">
@@ -56,7 +64,7 @@
 
     <!-- sección sobre nosotros -->
 
-    <section class="bg-primary bg-gradient py-5 my-5">
+    <section id="sobre-nosotros" class="bg-primary bg-gradient py-5 my-5">
 
         <div class="container mx-auto">
 
@@ -64,8 +72,10 @@
 
                 <div class="col-12 col-md-6 textoaboutus">
                     <!-- text-center para centrarlo en general, text-md-start para ajustarlo al inicio desde mediano hacia arriba -->
-                    <h1 class="text-center text-md-start">Sobre Nosotros</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem commodi impedit a sit voluptate sapiente mollitia ipsa, eligendi corrupti rerum? Unde laudantium corrupti perferendis odio ut iusto expedita error voluptates!</p>
+                    <h1 class="text-center text-md-start titulo-aboutus">Sobre Nosotros</h1>
+                    <p>miHobby3d es un emprendimiento dedicado a entregar soluciones mediante la tecnología de impresión 3D FDM. Nuestra misión es entregar un servicio rápido, confiable y de calidad, con suma consideración a las necesidades de nuestros clientes.<br>
+                        Cada pieza es diseñada e impresa con el fin de asegurar la satisfacción de nuestros clientes. Nuestros modelos van desde piezas funcionales, regalos y soluciones para el hogar.
+                    </p>
                 </div>
 
                 <!-- d-none permite ocultar un objeto, d-md-block permite ocultar el objeto cuando la pantalla es mas chica que md (mediano) -->
@@ -83,7 +93,7 @@
 
     <!-- inicio carrusel productos -->
 
-    <h1 class="titulo-main">Nuestros servicios</h1>
+    <h1 id="servicios" class="titulo-main">Nuestros servicios</h1>
 
     <section class="bg-white my-5">
 
@@ -156,7 +166,7 @@
 
     <!-- inicio faq -->
 
-    <h1 class="titulo-main">Preguntas frecuentes</h1>
+    <h1 id="faq" class="titulo-main">Preguntas frecuentes</h1>
 
     <div class="section bg-white my-5">
 
@@ -209,15 +219,15 @@
 
     <!-- inicio formulario contacto -->
 
-    <h1 class="titulo-main mb-4">¡Haz tu pedido!</h1>
+    <h1 id="contacto" class="titulo-main mb-4">¡Haz tu pedido!</h1>
 
     <section>
         <div class="container ">
-            <p class="mx-auto parrafo"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos dicta amet voluptatibus doloremque alias ex recusandae incidunt. Optio, assumenda consectetur!</p>
+            <p class="mx-auto parrafo"> ¡Escríbenos! Describe tu necesidad y nosotros te escribiremos de vuelta con nuestra propuesta (respuesta dentro de las próximas 48 horas).</p>
         </div>
     </section>
 
-    <div class="section my-5">
+    <div class="section mb-5">
 
         <div class="container py-3">
             <!-- <div class="container text-center"> con este se centra el texto -->
@@ -279,7 +289,7 @@
         <section class="container d-flex align-self-center border-bottom">
 
             <!-- Left -->
-            <span class="col-2">Contáctanos:</span>
+            <span class="col-2 d-none d-lg-block">Contáctanos:</span>
                 <div class="fila-botones d-none d-lg-block">
                    
                 
@@ -305,7 +315,7 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-3 text-center">
-                            <i class="fas fa-gem me-3"></i>miHobby3D
+                            <i class="fas fa-cube me-3"></i>miHobby3D
                         </h6>
                         <p>
                             Entregándote soluciones en 3 dimensiones.
@@ -314,43 +324,22 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 d-none d-lg-block">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            Productos
+                            Secciones
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Angular</a>
+                            <a href="#sobre-nosotros" class="text-reset">Nosotros</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">React</a>
+                            <a href="#faq" class="text-reset">FAQ</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Vue</a>
+                            <a href="#servicios" class="text-reset">Servicios</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Laravel</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Pricing</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Settings</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Orders</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Help</a>
+                            <a href="#contacto" class="text-reset">Haz tu pedido</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -361,12 +350,11 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             Contacto
                         </h6>
-                        <p><i class="fas fa-home me-3"></i> Ejemplo direccion</p>
+                        <p><i class="fa-solid fa-house me-3"></i> www.miHobby3d.cl</p>
                         <p>
-                            <i class="fas fa-envelope me-3"></i> info@example.com
+                            <i class="fas fa-envelope me-3"></i> contacto@miHobby3d.cl
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> +56999999999</p>
-                        <p><i class="fas fa-print me-3"></i> +56999999999</p>
+                        <p><i class="fas fa-phone me-3"></i> +56 9 96158493</p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -407,6 +395,8 @@
                 zoom: 18,
             })
         </script>
+        <!-- fonts awesome -->
+        <script src="https://kit.fontawesome.com/4c52d9d057.js" crossorigin="anonymous"></script>
 
         <script>
             // Example starter JavaScript for disabling form submissions if there are invalid fields
