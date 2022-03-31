@@ -2,6 +2,10 @@
     color: rgb(255, 255, 255);
 }
 
+.titulo-aboutus{
+  font-weight: bolder;
+  font-size: 250%;
+}
 .img-about {
     border-radius: 20px;
 }
