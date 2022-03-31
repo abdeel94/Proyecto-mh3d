@@ -67,9 +67,33 @@
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
   transition: all .4s ease-in-out;
+  position: relative;
+  top: -29px;
+  right: -100px;
 }
 
+
 .buttons a:hover {
+  transform: scale(1.2);
+}
+
+.buttons-2 a {
+  text-decoration: none;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+
+}
+
+
+.buttons-2 a:hover {
   transform: scale(1.2);
 }
 
@@ -79,11 +103,10 @@
     background-color: rgb(255, 255, 255);
 }
 
-.fila-botones{
-  position: relative;
-  top: -8px;
-  left: -120px;
-
+.fila-botones-{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .titulo-main{
@@ -94,4 +117,8 @@
 
 .titulo-aboutus{
   font-weight: 600;
+}
+
+.copyright{
+  font-size: small;
 }
