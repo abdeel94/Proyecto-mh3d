@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -97,41 +96,71 @@
 
     <h1 id="servicios" class="titulo-main">Nuestros servicios</h1>
 
+    
     <section class="bg-white my-5">
 
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <div class="carousel center-align">
-                        <div class="carousel-item">
-                            <h2 class="subtitulo"></h2>
-                            <p></p>
-                            <img src="img/posavasos_pikachu.jpg" alt="Posavasos con pixel art de Pikachu">
-                                
+        <div class="container col-8 col-lg-4 mx-auto my-5 mx-5">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="img/posavasos_pikachu.jpg" class="d-block w-100 img-fluid" alt="Posavasos con pixel art de Pikachu">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="container bg-dark bg-opacity-75 rounded-3">
+                                <h5 class="pt-2">Artículos de escritorio</h5>
+                                <p class="py-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum aperiam molestias totam provident vel omnis neque dolorem repudiandae doloremque excepturi nesciunt dignissimos, nobis labore perspiciatis incidunt. Dolores
+                                    nostrum mollitia hic..</p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <h2 class="subtitulo"></h2>
-                            <p></p>
-                            <img src="img/perro_buda.jpg" class="d-block w-100 img-fluid" alt="Perro con cuerpo de buda">
-                                
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="img/perro_buda.jpg" class="d-block w-100 img-fluid" alt="Perro con cuerpo de buda">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="container bg-dark bg-opacity-75 rounded-3">
+                                <h5 class="pt-2">Regalos y novedades</h5>
+                                <p class="py-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum aperiam molestias totam provident vel omnis neque dolorem repudiandae doloremque excepturi nesciunt dignissimos, nobis labore perspiciatis incidunt. Dolores
+                                    nostrum mollitia hic..</p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <h2 class="subtitulo"></h2>
-                            <p></p>
-                            <img src="img/primera_capa_test.jpg" class="d-block w-100 img-fluid" alt="Prueba de primera capa en impresora ender 3">
-                                
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="img/primera_capa_test.jpg" class="d-block w-100 img-fluid" alt="Prueba de primera capa en impresora ender 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="container bg-dark bg-opacity-75 rounded-3">
+                                <h5 class="pt-2">3 label</h5>
+                                <p class="py-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum aperiam molestias totam provident vel omnis neque dolorem repudiandae doloremque excepturi nesciunt dignissimos, nobis labore perspiciatis incidunt. Dolores
+                                    nostrum mollitia hic..</p>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                            <h2 class="subtitulo"></h2>
-                            <p></p>
-                            <img src="img/colgador.jpg" class="d-block w-100 img-fluid" alt="Colgadores impresos pegados en la muralla">
-                        </div>
-                        
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="img/colgador.jpg" class="d-block w-100 img-fluid" alt="Colgadores impresos pegados en la muralla">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="container bg-dark bg-opacity-75 rounded-3">
+                                <h5 class="pt-2">Organizadores</h5>
+                                <p class="py-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum aperiam molestias totam provident vel omnis neque dolorem repudiandae doloremque excepturi nesciunt dignissimos, nobis labore perspiciatis incidunt. Dolores
+                                    nostrum mollitia hic..</p>
+                            </div>
                         </div>
                     </div>
 
                 </div>
-          
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </section>
     <!-- fin carrusel productos -->
 
@@ -382,7 +411,7 @@
 
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
         <script src="js/main.js"></script>
@@ -400,26 +429,6 @@
         <!-- fonts awesome -->
         <script src="https://kit.fontawesome.com/4c52d9d057.js" crossorigin="anonymous"></script>
 
-        <script>
-            // Example starter JavaScript for disabling form submissions if there are invalid fields
-            (function() {
-                'use strict';
-                window.addEventListener('load', function() {
-                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                    var forms = document.getElementsByClassName('needs-validation');
-                    // Loop over them and prevent submission
-                    var validation = Array.prototype.filter.call(forms, function(form) {
-                        form.addEventListener('submit', function(event) {
-                            if (form.checkValidity() === false) {
-                                event.preventDefault();
-                                event.stopPropagation();
-                            }
-                            form.classList.add('was-validated');
-                        }, false);
-                    });
-                }, false);
-            })();
-        </script>
 </body>
 
 </html>
