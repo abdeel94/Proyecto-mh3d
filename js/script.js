@@ -20,32 +20,21 @@
 
 //Jquery acceso 
 $(document).ready(function(){
-    $("#myModal").validate({
-        rules: {
-            forma_usuario: {
-              required: true,
-              email: true
-            },
-            forma_contraseña:{
-                required:true,
-                minlength:6,
-                maxlength:14
-            }
-
-         },
-         messages:{
-             forma_usuario: {
-                 required: "Por favor ingrese su e-mail de usuario",
-                 email:"El correo no es válido"
-             },
-             forma_contraseña:{
-                 required: "Introduzca la contraseña",
-                 minlegth: "Minimo 6 caracteres",
-                 maxlength: "Máximo 14 caracteres"
-
-             }
-                
-           }
-
+    $("#submit").click(function (){
+        var forma_usuario = $("#forma_usuario").val();
+        var forma_contraseña =$("#forma_contraseña").val();
+        
+        if(forma_usuario.length == "")
+        {
+            $("#p1").text("Por favor ingresa tu correo electronico");
+            $("#forma_usuario").focus();
+            return false;
+        }
+        else if (forma_contraseña.length==""){
+            $("#p2").text("Por favor ingresa tu contraseña");
+            $("#forma_contraseña").focus();
+            return false;
+        }
     });
 });
+        
