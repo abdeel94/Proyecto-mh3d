@@ -17,3 +17,55 @@
         });
     }, false);
 })();
+
+
+
+$(function() {
+
+    $("form[name='registro']").validate({
+
+      rules: {
+
+        registronombre: {
+            required: true,
+            minlength: 4,
+            maxlength : 8
+
+        },
+
+        registromail: {
+          required: true,
+          email: true
+        },
+        registropassword: {
+          required: true,
+          minlength: 4
+        },
+
+        registrorepeatpass: {
+            required: true,
+            equalTo: "#registropassword"
+        }
+        },
+
+      messages: {
+        registronombre: {
+            required: "Ingrese un nombre.",
+            minlength: "El nombre no puede tener menos de 4 carácteres.",
+            maxlength : "El nombre no puede tener más de 8 carácteres."
+
+        },
+        registropassword: {
+          required: "Ingrese una contraseña.",
+          minlength: "La contraseña debe tener mas de 4 carácteres."
+        },
+        registromail: "Ingrese un email válido.",
+
+          registrorepeatpass:"La contraseña debe ser igual al campo anterior."
+      },
+ 
+      submitHandler: function(form) {
+        form.submit();
+      }
+    });
+  });
