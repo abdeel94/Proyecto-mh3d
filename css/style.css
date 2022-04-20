@@ -126,3 +126,7 @@
 .copyright{
   font-size: small;
 }
+
+form .error {
+  color: #ff0000;
+}
