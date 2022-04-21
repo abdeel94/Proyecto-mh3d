@@ -18,7 +18,7 @@
     }, false);
 })();
 
-
+//jquery
 
 $(function() {
 
@@ -67,6 +67,7 @@ $(function() {
       submitHandler: function(form) {
         form.submit();
       }
+      
     });
   });
 
