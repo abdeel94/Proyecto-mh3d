@@ -69,3 +69,35 @@ $(function() {
       }
     });
   });
+
+  $(function() {
+
+    $("form[name='acceso']").validate({
+
+      rules: {
+
+        accesoemail: {
+            required: true,
+            email: true
+
+        },
+
+        accesopassword: {
+          required: true,
+          minlength: 4
+        }
+      },
+
+      messages: {
+          accesopassword: {
+          required: "Ingrese una contraseña.",
+          minlength: "La contraseña debe tener mas de 4 carácteres."
+        },
+        accesoemail: "Ingrese un email válido."
+       
+      },
+      submitHandler: function(form) {
+        form.submit();
+      }
+    });
+  });

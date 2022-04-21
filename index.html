@@ -75,24 +75,22 @@
 
                             <div class="container border-bottom">
 
-                                <form class="row align-items-center">
+                                <form class="row align-items-center" name="acceso"> 
 
                                     <div class="row justify-content-center">
-                                        <!-- nombre -->
-                                        <div class="col-8 my-2">
-                                            <label class="form-label parrafo" for="forma_usuario">E-mail de usuario:</label>
-                                            <input type="text" id="forma_usuario" class="form-control" required="" />
-                                            <div class="invalid-feedback">Por favor ingrese su e-mail de usuario.</div>
-
-                                        </div>
-
                                         <!-- mail -->
                                         <div class="col-8 my-2">
-                                            <label class="form-label " for="forma_contraseña">Contraseña:</label>
-                                            <input type="email" id="forma_contraseña" class="form-control" required="" />
-                                            <div class="invalid-feedback">Por favor ingrese su contraseña.</div>
-
+                                            <label for="accesoemail" class="parrafo" >Email:</label>
+                                            <input type="text" name="accesoemail" id="accesoemail"/>
                                         </div>
+
+                                        <!-- contraseña -->
+                                        <div class="col-8 my-2">
+                                            <label class="parrafo " for="accesopassword">Ingrese su contraseña:</label>
+                                            <input type="password" id="accesopassword" name="accesopassword" class="form-control" />
+    
+                                        </div> 
+    
 
                                     </div>
                                     <div>
