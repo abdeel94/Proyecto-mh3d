@@ -103,7 +103,7 @@ $(function() {
     });
   });
 
-  // carrusel dinámico con json
+  // carrusel dinámico con
 
   wrapCarousel({
 		container: '#carousel',
@@ -125,7 +125,7 @@ $(function() {
       slideHeight = 500,
       onSlideWidth = 680,
       slideWidth,
-      onSlideHeight = 600,
+      onSlideHeight = 570,
       slidesBumped;
   
     //checks
