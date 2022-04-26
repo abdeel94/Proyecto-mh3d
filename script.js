@@ -118,15 +118,14 @@ $(function() {
       containerPadding = 30,
       startSlideOutDuration = 1, //seconds
       transitionDuration = .4, //seconds
-      pauseDuration = 5, //seconds
+      pauseDuration = 3, //seconds
       onloadHoldDuration = 1.5, //seconds
       slidesData,
       interruptAutoInt = true,
       slideHeight = 500,
       onSlideWidth = 680,
       slideWidth,
-      onSlideHeight = 570,
-      slidesBumped;
+      onSlideHeight = 570;
   
     //checks
     if (!params || typeof params !== 'object') return error('@params not passed or is not an object');
