@@ -114,14 +114,14 @@ $(function() {
   async function wrapCarousel(params) {
 	
     //defaults
-    let	spaceBetweenSlides = 15,
-      containerPadding = 20,
+    let	spaceBetweenSlides = 30,
+      containerPadding = 30,
       startSlideOutDuration = 1, //seconds
       transitionDuration = .4, //seconds
       pauseDuration = 5, //seconds
       onloadHoldDuration = 1.5, //seconds
       slidesData,
-      interruptAutoInt = false,
+      interruptAutoInt = true,
       slideHeight = 500,
       onSlideWidth = 680,
       slideWidth,
