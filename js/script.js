@@ -107,7 +107,7 @@ $(function() {
 
   wrapCarousel({
 		container: '#carousel',
-		dataFileURI: 'data.json',
+		dataFileURI: 'js/data.json',
 		imgsDirURI: 'img'
 	});
 
